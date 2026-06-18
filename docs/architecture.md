@@ -73,4 +73,21 @@ Business Data Sources
 - Security by Design
 - Scalability
 - Observability
-``
+
+## Phase 4 Architecture
+
+Power App
+    ↓
+AskQuestion API
+    ↓
+Question Processor
+    ↓
+Intent Detection
+    ↓
+Query Mapping
+    ↓
+Azure SQL Database
+    ↓
+Response Builder
+    ↓
+Business Response

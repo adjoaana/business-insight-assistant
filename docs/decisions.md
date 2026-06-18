@@ -76,3 +76,19 @@ Adopt Microsoft Fabric in a future phase.
 ### Rationale
 
 Fabric provides enterprise-scale analytics capabilities beyond MVP requirements.
+
+## ADR-008
+
+### Decision
+
+Use rule-based intent detection for MVP.
+
+### Alternatives Considered
+
+- Azure OpenAI
+- Copilot Studio
+- Natural Language Understanding services
+
+### Rationale
+
+A rule-based
