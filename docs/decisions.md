@@ -92,3 +92,33 @@ Use rule-based intent detection for MVP.
 ### Rationale
 
 A rule-based
+
+## ADR-009
+
+### Decision
+
+Use Azure SQL Database as the primary data source.
+
+### Alternatives Considered
+
+- Dataverse
+- Cosmos DB
+- Fabric Lakehouse
+
+### Rationale
+
+The business data model is relational and benefits from structured querying and reporting capabilities.
+## ADR-010
+
+### Decision
+
+Use Power Apps as the primary user interface.
+
+### Alternatives Considered
+
+- Custom Web Application
+- Teams Application
+
+### Rationale
+
+Power Apps provides rapid development, Microsoft ecosystem integration, and low-code extensibility suitable for the MVP.

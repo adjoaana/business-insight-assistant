@@ -91,3 +91,17 @@ Azure SQL Database
 Response Builder
     ↓
 Business Response
+
+## Phase 6 User Experience
+
+User
+    ↓
+Power App
+    ↓
+AskQuestion API
+    ↓
+Intent Engine
+    ↓
+Azure SQL Database
+    ↓
+
