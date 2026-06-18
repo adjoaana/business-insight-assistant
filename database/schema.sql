@@ -7,7 +7,7 @@ CREATE TABLE customers (
     Country VARCHAR(50) NOT NULL,
     CreatedAt DATETIME DEFAULT GETDATE(),
 );
-CREATE TABLE Products (
+CREATE TABLE products (
     ProductId INT IDENTITY(1,1) PRIMARY KEY,
     ProductName VARCHAR(100) NOT NULL,
     Description VARCHAR(255),
@@ -16,7 +16,7 @@ CREATE TABLE Products (
     StockQuantity INT NOT NULL,
     CreatedAt DATETIME DEFAULT GETDATE(),
 );
-CREATE TABLE Orders (
+CREATE TABLE orders (
     OrderId INT IDENTITY(1,1) PRIMARY KEY,
     CustomerId INT NOT NULL,
     OrderDate DATETIME DEFAULT GETDATE(),
@@ -24,7 +24,7 @@ CREATE TABLE Orders (
     Status VARCHAR(20) NOT NULL,
     FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId)
 );
-CREATE TABLE OrderItems (
+CREATE TABLE orderItems (
     OrderItemId INT IDENTITY(1,1) PRIMARY KEY,
     OrderId INT NOT NULL,
     ProductId INT NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE OrderItems (
     FOREIGN KEY (OrderId) REFERENCES Orders(OrderId),
     FOREIGN KEY (ProductId) REFERENCES Products(ProductId)
 );
-CREATE TABLE PAYMENTS (
+CREATE TABLE payments (
     PaymentId INT IDENTITY(1,1) PRIMARY KEY,
     OrderId INT NOT NULL,
     PaymentDate DATETIME DEFAULT GETDATE(),
@@ -60,7 +60,7 @@ create table employees (
     JobTitle VARCHAR(50),
     Department VARCHAR(50)
 );
-CREATE TABLE SUPPORT_TICKETS (
+CREATE TABLE support_tickets (
     TicketId INT IDENTITY(1,1) PRIMARY KEY,
     CustomerId INT NOT NULL,
     Subject VARCHAR(100) NOT NULL,
