@@ -1,0 +1,701 @@
+INSERT INTO Customers
+(CustomerName, EmailAddress, PhoneNumber, Industry, Country)
+VALUES
+('Contoso Ltd','info@contoso.com','+233201000001','Technology','Ghana'),
+('Fabrikam Manufacturing','sales@fabrikam.com','+233201000002','Manufacturing','Nigeria'),
+('Northwind Retail','contact@northwind.com','+233201000003','Retail','South Africa'),
+('Adventure Works','support@adventureworks.com','+233201000004','Sports','Kenya'),
+('Alpine Electronics','info@alpine.com','+233201000005','Electronics','United Kingdom'),
+('Blue Yonder Logistics','contact@blueyonder.com','+233201000006','Logistics','Netherlands'),
+('Woodgrove Bank','customers@woodgrove.com','+233201000007','Finance','United Kingdom'),
+('Proseware Solutions','sales@proseware.com','+233201000008','Technology','Ghana'),
+('Tailspin Toys','hello@tailspin.com','+233201000009','Retail','South Africa'),
+('Litware Inc','contact@litware.com','+233201000010','Technology','United States'),
+
+('Apex Healthcare','info@apexhealth.com','+233201000011','Healthcare','Ghana'),
+('Summit Insurance','contact@summitins.com','+233201000012','Insurance','Nigeria'),
+('Omni Foods','sales@omnifoods.com','+233201000013','Food & Beverage','Kenya'),
+('Vertex Energy','info@vertexenergy.com','+233201000014','Energy','South Africa'),
+('Prime Technologies','contact@primetech.com','+233201000015','Technology','Ghana'),
+('Capital Holdings','info@capitalholdings.com','+233201000016','Finance','United Kingdom'),
+('Global Freight','operations@globalfreight.com','+233201000017','Logistics','Germany'),
+('Evergreen Agriculture','sales@evergreenagri.com','+233201000018','Agriculture','Nigeria'),
+('Urban Retail Group','contact@urbanretail.com','+233201000019','Retail','Kenya'),
+('Metro Telecom','info@metrotelecom.com','+233201000020','Telecommunications','Ghana'),
+
+('Nova Construction','contact@novaconstruct.com','+233201000021','Construction','United Arab Emirates'),
+('Sterling Motors','sales@sterlingmotors.com','+233201000022','Automotive','South Africa'),
+('CloudSphere','hello@cloudsphere.com','+233201000023','Technology','United States'),
+('Momentum Health','support@momentumhealth.com','+233201000024','Healthcare','United Kingdom'),
+('Bright Education','info@brightedu.com','+233201000025','Education','Ghana'),
+('Zenith Bank','contact@zenithbank.com','+233201000026','Finance','Nigeria'),
+('Fusion Consulting','sales@fusionconsulting.com','+233201000027','Professional Services','South Africa'),
+('Eagle Security','support@eaglesecurity.com','+233201000028','Security','Kenya'),
+('Harmony Hotels','bookings@harmonhotels.com','+233201000029','Hospitality','Ghana'),
+('Nexus Electronics','sales@nexuselectronics.com','+233201000030','Electronics','Germany'),
+
+('Velocity Media','info@velocitymedia.com','+233201000031','Media','United Kingdom'),
+('Ocean Shipping','contact@oceanshipping.com','+233201000032','Logistics','Netherlands'),
+('Future Retail','sales@futureretail.com','+233201000033','Retail','Nigeria'),
+('Peak Manufacturing','info@peakmfg.com','+233201000034','Manufacturing','South Africa'),
+('Silverline Legal','contact@silverlinelegal.com','+233201000035','Legal','Ghana'),
+('Orion Aerospace','info@orionaero.com','+233201000036','Aerospace','United States'),
+('Redwood Properties','sales@redwoodproperties.com','+233201000037','Real Estate','Kenya'),
+('Infinity Energy','contact@infinityenergy.com','+233201000038','Energy','United Kingdom'),
+('Pioneer Foods','hello@pioneerfoods.com','+233201000039','Food & Beverage','South Africa'),
+('Vision Healthcare','support@visionhealth.com','+233201000040','Healthcare','Nigeria'),
+
+('Atlas Mining','contact@atlasmining.com','+233201000041','Mining','Ghana'),
+('Bright Logistics','info@brightlogistics.com','+233201000042','Logistics','Kenya'),
+('Elite Insurance','sales@eliteinsurance.com','+233201000043','Insurance','United Kingdom'),
+('Connect Telecom','support@connecttelecom.com','+233201000044','Telecommunications','South Africa'),
+('Smart Education','info@smartedu.com','+233201000045','Education','Nigeria'),
+('Core Banking Services','contact@corebanking.com','+233201000046','Finance','Ghana'),
+('Dynamic Solutions','sales@dynamicsolutions.com','+233201000047','Technology','United States'),
+('Global Manufacturing','info@globalmfg.com','+233201000048','Manufacturing','Germany'),
+('Green Agriculture','contact@greenagri.com','+233201000049','Agriculture','Kenya'),
+('Premier Retail Group','sales@premierretail.com','+233201000050','Retail','United Kingdom');
+
+INSERT INTO Products
+(ProductName, Description, Category, Price, StockQuantity)
+VALUES
+('Laptop Pro 15','Business laptop with 15-inch display','Computing',1500,100),
+('Laptop Pro 13','Compact business laptop','Computing',1300,120),
+('Business Tablet','Tablet for mobile productivity','Computing',800,150),
+('Wireless Mouse','Bluetooth wireless mouse','Accessories',30,500),
+('Mechanical Keyboard','Premium keyboard','Accessories',85,300),
+('Docking Station','Universal USB-C docking station','Accessories',120,250),
+('Monitor 24 Inch','Full HD monitor','Displays',220,180),
+('Monitor 27 Inch','4K professional monitor','Displays',350,160),
+('Conference Camera','Video conferencing camera','Collaboration',600,50),
+('Wireless Headset','Noise-cancelling headset','Collaboration',120,200),
+('Smartphone X','Business smartphone','Mobile',950,140),
+('Smartphone Lite','Entry-level smartphone','Mobile',450,180),
+('Printer Enterprise','Office printer','Office Equipment',700,40),
+('Scanner Pro','High-speed document scanner','Office Equipment',500,60),
+('Network Switch 24 Port','Managed network switch','Networking',900,35),
+('Wireless Access Point','Enterprise Wi-Fi access point','Networking',350,75),
+('External SSD 1TB','Portable SSD storage','Storage',180,220),
+('External SSD 2TB','Portable SSD storage','Storage',320,150),
+('Projector HD','Conference room projector','Collaboration',850,30),
+('Interactive Display','Touch enabled meeting display','Collaboration',2500,12);
+
+INSERT INTO Orders
+(CustomerId, OrderDate, TotalAmount, Status)
+VALUES
+(1,'2026-01-05',1800,'Completed'),
+(2,'2026-01-07',950,'Completed'),
+(3,'2026-01-10',2200,'Completed'),
+(4,'2026-01-12',750,'Completed'),
+(5,'2026-01-15',3200,'Completed'),
+(6,'2026-01-18',450,'Completed'),
+(7,'2026-01-20',1500,'Processing'),
+(8,'2026-01-22',890,'Completed'),
+(9,'2026-01-25',2700,'Completed'),
+(10,'2026-01-28',1200,'Pending'),
+(11,'2026-02-01',1800,'Completed'),
+(12,'2026-02-03',950,'Completed'),
+(13,'2026-02-05',3100,'Completed'),
+(14,'2026-02-08',400,'Completed'),
+(15,'2026-02-10',2200,'Processing'),
+(16,'2026-02-12',1850,'Completed'),
+(17,'2026-02-15',650,'Completed'),
+(18,'2026-02-17',3400,'Completed'),
+(19,'2026-02-18',900,'Pending'),
+(20,'2026-02-20',1500,'Completed'),
+(21,'2026-02-22',600,'Cancelled'),
+(22,'2026-02-24',2500,'Completed'),
+(23,'2026-02-25',1800,'Completed'),
+(24,'2026-02-27',700,'Processing'),
+(25,'2026-02-28',1100,'Completed');
+(26,'2026-03-01',2450,'Completed'),
+(27,'2026-03-02',1350,'Completed'),
+(28,'2026-03-03',850,'Completed'),
+(29,'2026-03-04',1750,'Processing'),
+(30,'2026-03-05',2990,'Completed'),
+(31,'2026-03-06',4500,'Completed'),
+(32,'2026-03-07',620,'Pending'),
+(33,'2026-03-08',1100,'Completed'),
+(34,'2026-03-09',2800,'Completed'),
+(35,'2026-03-10',950,'Cancelled'),
+(36,'2026-03-11',3300,'Completed'),
+(37,'2026-03-12',1250,'Completed'),
+(38,'2026-03-13',700,'Processing'),
+(39,'2026-03-14',4100,'Completed'),
+(40,'2026-03-15',1800,'Completed'),
+(41,'2026-03-16',2200,'Completed'),
+(42,'2026-03-17',1600,'Pending'),
+(43,'2026-03-18',875,'Completed'),
+(44,'2026-03-19',3150,'Completed'),
+(45,'2026-03-20',1400,'Completed'),
+(46,'2026-03-21',2650,'Completed'),
+(47,'2026-03-22',980,'Processing'),
+(48,'2026-03-23',5200,'Completed'),
+(49,'2026-03-24',1750,'Completed'),
+(50,'2026-03-25',2400,'Completed');
+(51,'2026-04-01',1950,'Completed'),
+(52,'2026-04-02',850,'Completed'),
+(53,'2026-04-03',2750,'Completed'),
+(54,'2026-04-04',1200,'Processing'),
+(55,'2026-04-05',3400,'Completed'),
+(56,'2026-04-06',650,'Pending'),
+(57,'2026-04-07',1800,'Completed'),
+(58,'2026-04-08',4100,'Completed'),
+(59,'2026-04-09',2200,'Completed'),
+(60,'2026-04-10',950,'Cancelled'),
+(61,'2026-04-11',1600,'Completed'),
+(62,'2026-04-12',3100,'Completed'),
+(63,'2026-04-13',720,'Processing'),
+(64,'2026-04-14',2900,'Completed'),
+(65,'2026-04-15',1450,'Completed'),
+(66,'2026-04-16',3800,'Completed'),
+(67,'2026-04-17',890,'Pending'),
+(68,'2026-04-18',2100,'Completed'),
+(69,'2026-04-19',1750,'Completed'),
+(70,'2026-04-20',2600,'Completed'),
+(71,'2026-04-21',1250,'Completed'),
+(72,'2026-04-22',4700,'Completed'),
+(73,'2026-04-23',980,'Processing'),
+(74,'2026-04-24',3300,'Completed'),
+(75,'2026-04-25',1500,'Completed');
+(76,'2026-05-01',2100,'Completed'),
+(77,'2026-05-02',780,'Completed'),
+(78,'2026-05-03',3250,'Completed'),
+(79,'2026-05-04',1400,'Processing'),
+(80,'2026-05-05',2600,'Completed'),
+(81,'2026-05-06',890,'Pending'),
+(82,'2026-05-07',3700,'Completed'),
+(83,'2026-05-08',1150,'Completed'),
+(84,'2026-05-09',4900,'Completed'),
+(85,'2026-05-10',1050,'Cancelled'),
+(86,'2026-05-11',2800,'Completed'),
+(87,'2026-05-12',920,'Completed'),
+(88,'2026-05-13',1500,'Processing'),
+(89,'2026-05-14',4200,'Completed'),
+(90,'2026-05-15',1800,'Completed'),
+(91,'2026-05-16',3100,'Completed'),
+(92,'2026-05-17',650,'Pending'),
+(93,'2026-05-18',2200,'Completed'),
+(94,'2026-05-19',1350,'Completed'),
+(95,'2026-05-20',2700,'Completed'),
+(96,'2026-05-21',1450,'Completed'),
+(97,'2026-05-22',5100,'Completed'),
+(98,'2026-05-23',1200,'Processing'),
+(99,'2026-05-24',3400,'Completed'),
+(100,'2026-05-25',1600,'Completed');
+
+
+INSERT INTO OrderItems
+(OrderId, ProductId, Quantity, Price)
+VALUES
+(1,1,1,1500),
+(1,4,10,30),
+(2,11,1,950),
+(3,1,1,1500),
+(3,7,2,220),
+(4,3,1,800),
+(5,1,2,1500),
+(5,4,5,30),
+(6,4,15,30),
+(7,9,2,600),
+(7,8,1,350),
+(8,11,1,950),
+(9,1,1,1500),
+(9,13,1,700),
+(9,4,5,30),
+(10,3,1,800),
+(11,1,1,1500),
+(11,4,10,30),
+(12,11,1,950),
+(13,20,1,2500),
+(13,4,20,30),
+(14,4,10,30),
+(14,5,1,85),
+(15,9,2,600),
+(15,4,5,30),
+(16,1,1,1500),
+(16,7,1,220),
+(17,3,1,800),
+(18,1,2,1500),
+(18,11,1,950),
+(19,11,1,950),
+(20,1,1,1500),
+(21,4,20,30),
+(22,20,1,2500),
+(23,1,1,1500),
+(23,7,1,220),
+(24,3,1,800),
+(25,11,1,950),
+(25,4,5,30);
+INSERT INTO OrderItems
+(OrderId, ProductId, Quantity, Price)
+VALUES
+(26,1,1,1500),
+(26,6,5,120),
+(27,11,1,950),
+(28,3,1,800),
+(28,4,2,30),
+(29,1,1,1500),
+(29,8,2,120),
+(30,20,1,2500),
+(30,4,3,30),
+(31,1,2,1500),
+(31,9,2,34,1,1,1500),(31,9,2,600),
+(34,20,1,2500),
+(35,7,2,220),
+(35,4,5,30),
+(36,1,2,1500),
+(36,5,3,85),
+(37,11,1,950),
+(38,3,1,800),
+(39,20,1,2500),
+(39,9,2,600),
+(40,1,1,1500),
+(40,6,2,120),
+(41,11,2,950),
+(42,5,10,85),
+(43,3,1,800),
+(43,4,3,30),
+(44,1,2,1500),
+(45,11,1,950),
+(45,7,2,220),
+(46,20,1,2500),
+(47,4,25,30),
+(48,1,2,1500),
+(48,20,1,2500),
+(49,3,2,800),
+(50,11,1,950),
+(50,6,5,120);
+(32,4,20,30),
+(33,11,1,950),
+(33,3,1,800),
+INSERT INTO OrderItems
+(OrderId, ProductId, Quantity, Price)
+VALUES
+
+(51,1,1,1500),
+(51,4,15,30),
+
+(52,11,1,950),
+
+(53,20,1,2500),
+(53,6,2,120),
+
+(54,3,1,800),
+(54,5,4,85),
+
+(55,1,2,1500),
+
+(56,4,20,30),
+
+(57,11,1,950),
+(57,8,3,120),
+
+(58,20,1,2500),
+(58,7,2,220),
+
+(59,1,1,1500),
+(59,9,1,600),
+
+(60,3,1,800),
+(60,4,5,30),
+
+(61,1,1,1500),
+(61,11,1,950),
+
+(62,6,5,120),
+
+(63,20,1,2500),
+(63,4,10,30),
+
+(64,11,2,950),
+
+(65,3,1,800),
+(65,5,5,85),
+
+(66,1,2,1500),
+(66,8,2,120),
+
+(67,4,25,30),
+
+(68,11,1,950),
+(68,7,3,220),
+
+(69,20,1,2500),
+
+(70,1,1,1500),
+(70,6,3,120),
+
+(71,11,1,950),
+(71,5,2,85),
+
+(72,20,1,2500),
+(72,9,2,600),
+
+(73,3,2,800),
+
+(74,1,2,1500),
+
+INSERT INTO OrderItems
+(OrderId, ProductId, Quantity, Price)
+VALUES
+
+(76,1,1,1500),
+(76,4,10,30),
+
+(77,11,1,950),
+
+(78,20,1,2500),
+(78,6,4,120),
+
+(79,3,1,800),
+(79,5,6,85),
+
+(80,1,2,1500),
+
+(81,4,15,30),
+
+(82,11,2,950),
+
+(83,20,1,2500),
+(83,8,4,120),
+
+(84,1,1,1500),
+(84,9,2,600),
+
+(85,3,1,3,1,800),(85,3,1,800),
+(99,4,10,30),
+
+(100,20,1,2500),
+(100,11,1,950);
+(85,4,8,30),
+
+(86,1,2,1500),
+(86,11,1,950),
+
+(87,6,5,120),
+
+(88,20,1,2500),
+(88,5,5,85),
+
+(89,11,1,950),
+(89,4,12,30),
+
+(90,1,1,1500),
+(90,7,3,220),
+
+(91,20,1,2500),
+
+(92,3,2,800),
+
+(93,11,1,950),
+(93,6,3,120),
+
+(94,1,2,1500),
+
+(95,4,25,30),
+
+(96,20,1,2500),
+(96,9,1,600),
+
+(97,11,2,950),
+
+(98,1,1,1500),
+(99,4,10,30),
+
+(100,20,1,2500);
+INSERT INTO Invoices
+(OrderId, InvoiceDate, InvoiceAmount, Status)
+VALUES
+(1,'2026-01-06',1800,'Paid'),
+(2,'2026-01-08',950,'Paid'),
+(3,'2026-01-11',2200,'Paid'),
+(4,'2026-01-13',750,'Paid'),
+(5,'2026-01-16',3200,'Paid'),
+(6,'2026-01-19',450,'Paid'),
+(7,'2026-01-21',1500,'Unpaid'),
+(8,'2026-01-23',890,'Paid'),
+(9,'2026-01-26',2700,'Paid'),
+(10,'2026-01-29',1200,'Overdue'),
+
+(11,'2026-02-02',1800,'Paid'),
+(12,'2026-02-04',950,'Paid'),
+(13,'2026-02-06',3100,'Paid'),
+(14,'2026-02-09',400,'Paid'),
+(15,'2026-02-11',2200,'Unpaid'),
+(16,'2026-02-13',1850,'Paid'),
+(17,'2026-02-16',650,'Paid'),
+(18,'2026-02-18',3400,'Paid'),
+(19,'2026-02-19',900,'Overdue'),
+(20,'2026-02-21',1500,'Paid'),
+
+(21,'2026-02-23',600,'Paid'),
+(22,'2026-02-25',2500,'Paid'),
+(23,'2026-02-26',1800,'Paid'),
+(24,'2026-02-28',700,'Unpaid'),
+(25,'2026-03-01',1100,'Paid'),
+
+(26,'2026-03-02',2450,'Paid'),
+(27,'2026-03-03',1350,'Paid'),
+(28,'2026-03-04',850,'Paid'),
+(29,'2026-03-05',1750,'Unpaid'),
+(30,'2026-03-06',2990,'Paid'),
+
+(31,'2026-03-07',4500,'Paid'),
+(32,'2026-03-08',620,'Overdue'),
+(33,'2026-03-09',1100,'Paid'),
+(34,'2026-03-10',2800,'Paid'),
+(35,'2026-03-11',950,'Paid'),
+
+(36,'2026-03-12',3300,'Paid'),
+(37,'2026-03-13',1250,'Paid'),
+(38,'2026-03-14',700,'Unpaid'),
+(39,'2026-03-15',4100,'Paid'),
+(40,'2026-03-16',1800,'Paid'),
+
+(41,'2026-03-17',2200,'Paid'),
+(42,'2026-03-18',1600,'Unpaid'),
+(43,'2026-03-19',875,'Paid'),
+(44,'2026-03-20',3150,'Paid'),
+(45,'2026-03-21',1400,'Paid'),
+
+(46,'2026-03-22',2650,'Paid'),
+(47,'2026-03-23',980,'Unpaid'),
+(48,'2026-03-24',5200,'Paid'),
+(49,'2026-03-25',1750,'Paid'),
+(50,'2026-03-26',2400,'Paid'),
+
+(51,'2026-04-02',1950,'Paid'),
+(52,'2026-04-03',850,'Paid'),
+(53,'2026-04-04',2750,'Paid'),
+(54,'2026-04-05',1200,'Unpaid'),
+(55,'2026-04-06',3400,'Paid'),
+
+(56,'2026-04-07',650,'Overdue'),
+(57,'2026-04-08',1800,'Paid'),
+(58,'2026-04-09',4100,'Paid'),
+(59,'2026-04-10',2200,'Paid'),
+(60,'2026-04-11',950,'Paid'),
+
+(61,'2026-04-12',1600,'Paid'),
+(62,'2026-04-13',3100,'Paid'),
+(63,'2026-04-14',720,'Unpaid'),
+(64,'2026-04-15',2900,'Paid'),
+(65,'2026-04-16',1450,'Paid'),
+
+(66,'2026-04-17',3800,'Paid'),
+(67,'2026-04-18',890,'Overdue'),
+(68,'2026-04-19',2100,'Paid'),
+(69,'2026-04-20',1750,'Paid'),
+(70,'2026-04-21',2600,'Paid'),
+
+(71,'2026-04-22',1250,'Paid'),
+(72,'2026-04-23',4700,'Paid'),
+(73,'2026-04-24',980,'Unpaid'),
+(74,'2026-04-25',3300,'Paid'),
+(75,'2026-04-26',1500,'Paid'),
+
+(76,'2026-05-02',2100,'Paid'),
+(77,'2026-05-03',780,'Paid'),
+(78,'2026-05-04',3250,'Paid'),
+(79,'2026-05-05',1400,'Unpaid'),
+(80,'2026-05-06',2600,'Paid'),
+
+(81,'2026-05-07',890,'Overdue'),
+(82,'2026-05-08',3700,'Paid'),
+(83,'2026-05-09',1150,'Paid'),
+(84,'2026-05-10',4900,'Paid'),
+(85,'2026-05-11',1050,'Paid'),
+
+(86,'2026-05-12',2800,'Paid'),
+(87,'2026-05-13',920,'Unpaid'),
+(88,'2026-05-14',1500,'Paid'),
+(89,'2026-05-15',4200,'Paid'),
+(90,'2026-05-16',1800,'Paid'),
+
+(91,'2026-05-17',3100,'Paid'),
+(92,'2026-05-18',650,'Overdue'),
+(93,'2026-05-19',2200,'Paid'),
+(94,'2026-05-20',1350,'Paid'),
+(95,'2026-05-21',2700,'Paid'),
+
+(96,'2026-05-22',1450,'Paid'),
+(97,'2026-05-23',5100,'Unpaid'),
+(98,'2026-05-24',1200,'Paid'),
+(99,'2026-05-25',3400,'Paid'),
+(100,'2026-05-26',1600,'Paid');
+INSERT INTO Payments
+(OrderId, PaymentDate, Amount, PaymentMethod)
+VALUES
+(1,'2026-01-10',1800,'Bank Transfer'),
+(2,'2026-01-11',950,'Credit Card'),
+(3,'2026-01-15',2200,'Bank Transfer'),
+(4,'2026-01-16',750,'Mobile Money'),
+(5,'2026-01-18',3200,'Bank Transfer'),
+(6,'2026-01-20',450,'Credit Card'),
+(8,'2026-01-24',890,'Mobile Money'),
+(9,'2026-01-27',2700,'Bank Transfer'),
+
+(11,'2026-02-03',1800,'Bank Transfer'),
+(12,'2026-02-05',950,'Credit Card'),
+(13,'2026-02-08',3100,'Bank Transfer'),
+(14,'2026-02-10',400,'Mobile Money'),
+(16,'2026-02-14',1850,'Bank Transfer'),
+(17,'2026-02-17',650,'Credit Card'),
+(18,'2026-02-19',3400,'Bank Transfer'),
+(20,'2026-02-22',1500,'Mobile Money'),
+
+(21,'2026-02-24',600,'Credit Card'),
+(22,'2026-02-26',2500,'Bank Transfer'),
+(23,'2026-02-27',1800,'Bank Transfer'),
+(25,'2026-03-02',1100,'Credit Card'),
+
+(26,'2026-03-03',2450,'Bank Transfer'),
+(27,'2026-03-04',1350,'Credit Card'),
+(28,'2026-03-05',850,'Mobile Money'),
+(30,'2026-03-07',2990,'Bank Transfer'),
+(31,'2026-03-08',4500,'Bank Transfer'),
+
+(33,'2026-03-10',1100,'Credit Card'),
+(34,'2026-03-11',2800,'Bank Transfer'),
+(35,'2026-03-12',950,'Credit Card'),
+(36,'2026-03-13',3300,'Bank Transfer'),
+(37,'2026-03-14',1250,'Mobile Money'),
+
+(39,'2026-03-16',4100,'Bank Transfer'),
+(40,'2026-03-17',1800,'Credit Card'),
+(41,'2026-03-18',2200,'Bank Transfer'),
+(43,'2026-03-20',875,'Mobile Money'),
+(44,'2026-03-21',3150,'Bank Transfer'),
+
+(45,'2026-03-22',1400,'Credit Card'),
+(46,'2026-03-23',2650,'Bank Transfer'),
+(48,'2026-03-25',5200,'Bank Transfer'),
+(49,'2026-03-26',1750,'Credit Card'),
+(50,'2026-03-27',2400,'Mobile Money'),
+
+(51,'2026-04-03',1950,'Bank Transfer'),
+(52,'2026-04-04',850,'Credit Card'),
+(53,'2026-04-05',2750,'Bank Transfer'),
+(55,'2026-04-07',3400,'Bank Transfer'),
+(57,'2026-04-09',1800,'Mobile Money'),
+
+(58,'2026-04-10',4100,'Bank Transfer'),
+(59,'2026-04-11',2200,'Credit Card'),
+(60,'2026-04-12',950,'Mobile Money'),
+(61,'2026-04-13',1600,'Bank Transfer'),
+(62,'2026-04-14',3100,'Bank Transfer'),
+
+(64,'2026-04-16',2900,'Credit Card'),
+(65,'2026-04-17',1450,'Mobile Money'),
+(66,'2026-04-18',3800,'Bank Transfer'),
+(68,'2026-04-20',2100,'Bank Transfer'),
+(69,'2026-04-21',1750,'Credit Card'),
+
+(70,'2026-04-22',2600,'Bank Transfer'),
+(71,'2026-04-23',1250,'Mobile Money'),
+(72,'2026-04-24',4700,'Bank Transfer'),
+(74,'2026-04-26',3300,'Credit Card'),
+(75,'2026-04-27',1500,'Bank Transfer'),
+
+(76,'2026-05-03',2100,'Bank Transfer'),
+(77,'2026-05-04',780,'Credit Card'),
+(78,'2026-05-05',3250,'Bank Transfer'),
+(80,'2026-05-07',2600,'Mobile Money'),
+(82,'2026-05-09',3700,'Bank Transfer'),
+
+(83,'2026-05-10',1150,'Credit Card'),
+(84,'2026-05-11',4900,'Bank Transfer'),
+(85,'2026-05-12',1050,'Mobile Money'),
+(86,'2026-05-13',2800,'Bank Transfer'),
+(88,'2026-05-15',1500,'Credit Card'),
+
+(89,'2026-05-16',4200,'Bank Transfer'),
+(90,'2026-05-17',1800,'Mobile Money'),
+(91,'2026-05-18',3100,'Bank Transfer'),
+(93,'2026-05-20',2200,'Credit Card'),
+(94,'2026-05-21',1350,'Bank Transfer'),
+
+(95,'2026-05-22',2700,'Mobile Money'),
+(96,'2026-05-23',1450,'Credit Card'),
+(98,'2026-05-25',1200,'Bank Transfer'),
+(99,'2026-05-26',3400,'Bank Transfer'),
+(100,'2026-05-27',1600,'Mobile Money');
+INSERT INTO Suppliers
+(SupplierName, ContactName, EmailAddress, PhoneNumber, Country)
+VALUES
+('Global Tech Supply','David Cole','contact@globaltech.com','+442000001','United Kingdom'),
+('Euro Electronics','Maria Hoffmann','sales@euroelectronics.com','+492000002','Germany'),
+('African Components Ltd','Kwame Mensah','info@africancomponents.com','+233200003','Ghana'),
+('Nordic Hardware','Lars Jensen','contact@nordichardware.com','+452000004','Denmark'),
+('Asia Devices Co','Wei Zhang','sales@asiadevices.com','+862000005','China'),
+
+('Prime Office Solutions','John Peters','info@primeoffice.com','+12000006','United States'),
+('Smart Networks','Sophie Martin','contact@smartnetworks.com','+332000007','France'),
+('Digital Distribution','Michael Adams','sales@digitaldist.com','+12000008','United States'),
+('TechSource Africa','Nana Ofori','info@techsourceafrica.com','+233200009','Ghana'),
+('Future Electronics','Hans Becker','sales@futureelectronics.com','+492000010','Germany'),
+
+('Global Displays','Emma Wilson','contact@globaldisplays.com','+442000011','United Kingdom'),
+('Wireless World','Ahmed Salem','sales@wirelessworld.com','+202000012','Egypt'),
+('Cloud Infrastructure Ltd','James Turner','info@cloudinfra.com','+442000013','United Kingdom'),
+('Enterprise Hardware','Thomas Green','sales@enterprisehardware.com','+12000014','United States'),
+('Connect Technologies','Linda Brown','contact@connecttech.com','+12000015','Canada'),
+
+('Apex Manufacturing','Peter Johnson','sales@apexmfg.com','+271000016','South Africa'),
+INSERT INTO Employees
+(FirstName, LastName, EmailAddress, PhoneNumber, HireDate, JobTitle, Department)
+VALUES
+('James','Mensah','james.mensah@businessinsight.com','+233240000001','2022-01-10','Sales Manager','Sales'),
+('Sarah','Johnson','sarah.johnson@businessinsight.com','+233240000002','2021-05-14','Finance Manager','Finance'),
+('Michael','Brown','michael.brown@businessinsight.com','+233240000003','2023-02-20','Support Lead','Support'),
+('Linda','Thomas','linda.thomas@businessinsight.com','+233240000004','2022-07-11','IT Manager','IT'),
+('David','Taylor','david.taylor@businessinsight.com','+233240000005','2024-01-15','Account Executive','Sales'),
+
+('Emily','Evans','emily.evans@businessinsight.com','+233240000006','2023-04-18','Financial Analyst','Finance'),
+('Daniel','Walker','daniel.walker@businessinsight.com','+233240000007','2023-06-01','Support Specialist','Support'),
+('Rebecca','Jones','rebecca.jones@businessinsight.com','+233240000008','2024-03-10','HR Manager','HR'),
+('Andrew','Smith','andrew.smith@businessinsight.com','+233240000009','2022-09-05','Systems Administrator','IT'),
+('Grace','Boateng','grace.boateng@businessinsight.com','+233240000010','2024-02-01','Sales Representative','Sales'),
+
+('Peter','Owusu','peter.owusu@businessinsight.com','+233240000011','2023-05-22','Operations Manager','Operations'),
+('Anna','Williams','anna.williams@businessinsight.com','+233240000012','2022-11-30','Business Analyst','Operations'),
+('Chris','Miller','chris.miller@businessinsight.com','+233240000013','2024-01-05','Support Specialist','Support'),
+('Nana','Ofori','nana.ofori@businessinsight.com','+233240000014','2023-09-18','Sales Representative','Sales'),
+('Sophie','Martin','sophie.martin@businessinsight.com','+233240000015','2022-08-12','Accountant','Finance'),
+
+('Thomas','Green','thomas.green@businessinsight.com','+233240000016','2024-04-01','Network Engineer','IT'),
+('Patricia','Wilson','patricia.wilson@businessinsight.com','+233240000017','2021-10-20','HR Officer','HR'),
+('Samuel','White','samuel.white@businessinsight.com','+233240000018','2023-12-01','Operations Analyst','Operations'),
+('Emma','Wilson','emma.wilson@businessinsight.com','+233240000019','2024-05-15','Customer Success Manager','Support'),
+('Yaw','Owusu','yaw.owusu@businessinsight.com','+233240000020','2024-06-10','Sales Representative','Sales');
+INSERT INTO Support_Tickets
+(CustomerId, Subject, Description, Status)
+VALUES
+(1,'Portal Login Issue','Unable to access customer portal','Open'),
+(2,'Invoice Clarification','Requesting clarification on invoice charges','Closed'),
+(3,'Order Delivery Delay','Order has not arrived within expected timeframe','In Progress'),
+(4,'Product Configuration','Assistance required with setup','Open'),
+(5,'Warranty Claim','Warranty replacement request','Closed'),
+
+(6,'System Access','User unable to access service platform','Open'),
+(7,'Payment Query','Question regarding payment status','Closed'),
+(8,'Product Fault','Product not functioning as expected','In Progress'),
+(9,'Account Update','Request to change company information','Closed'),
+(10,'Shipping Issue','Shipment tracking unavailable','Open'),
+
+(11,'Password Reset','Password reset required','Closed'),
+(12,'Feature Request','Request for product enhancement','Open'),
+(13,'Invoice Missing','Invoice not received','In Progress'),
+(14,'Order Cancellation','Request to cancel active order','Closed'),
+(15,'Technical Support','System generating error messages','Open'),
+
+(16,'Licensing Query','Questions regarding licensing terms','Closed'),
+(17,'Hardware Issue','Device not powering on','Open'),
+(18,'Data Request','Export of historical data required','In Progress'),
+(19,'Subscription Update','Upgrade subscription plan','Closed'),
+(20,'Training Request','Product training required','Open'),
+
+(21,'Delivery Confirmation','Confirm order delivery status','Closed'),
+(22,'Billing Error','Potential billing discrepancy','Open'),
+(23,'Performance Issue','Application running slowly','In Progress'),
