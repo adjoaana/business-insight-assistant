@@ -29,6 +29,15 @@ module.exports = [
       "most valuable customer",
     ],
   },
+  
+ {
+        intent: "OpenTickets",
+        keywords: [
+            "open tickets",
+            "support tickets"
+        ]
+    },
+
   {
     intent: "SalesByRegion",
     keywords: ["sales by region", "revenue by region", "income by region"],
