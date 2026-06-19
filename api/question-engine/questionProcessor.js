@@ -3,16 +3,20 @@ function detectIntent(question) {
 
     const normalizedQuestion = question.toLowerCase();
 
-    for (const intent in intents) {
-        for (const keyword of intents[intent]) {
-            if (normalizedQuestion.includes(keyword)) {
-                return intent;
+    for (const item of intents) {
+        for (const keyword of item.keywords) {
+            if (normalizedQuestion.includes(keyword.toLowerCase())) {
+                return item.intent;
             }
         }
     }
+    return "unknown";
 }
-return "unknown";
 
 module.exports = {
     detectIntent
 }
+
+console.log(
+    detectIntent("How many customers do we have?")
+);

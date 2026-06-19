@@ -1,7 +1,7 @@
 const { app } = require('@azure/functions');
-const {detectIntent} = require('./question-engine/intentMappings');
+const {detectIntent} = require('./question-engine/questionProcessor');
 
-app.htpp('AskQuestion', {
+app.http('AskQuestion', {
     methods: ['POST'],
     authLevel: 'anonymous',
     handler: async(request, context) => {
@@ -10,4 +10,19 @@ app.htpp('AskQuestion', {
         const intent = detectIntent(question);
         return{jsonBody: {question,intent}};
     }
-});
+}); 
+
+/*const { app } = require('@azure/functions');
+
+app.http('AskQuestion', {
+    methods: ['GET', 'POST'],
+    authLevel: 'anonymous',
+
+    handler: async (request, context) => {
+        return {
+            jsonBody: {
+                message: 'Hello from Azure Function'
+            }
+        };
+    }
+}); */
