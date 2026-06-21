@@ -7,8 +7,8 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0",
-    "mssql": "^12.5.5"
+    "@azure/functions": "^4.0.0"
   },
-  "main": "src/index.js"
+  "devDependencies": {},
+  "main": "functions/{index.js,functions/*.js}"
 }
